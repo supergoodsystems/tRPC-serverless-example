@@ -7,7 +7,8 @@ import type { Prisma } from '@prisma/client';
 import { TRPCError } from '@trpc/server';
 import { z } from 'zod';
 import { prisma } from '~/server/prisma';
-
+import { translateToSpanish } from '~/utils/openai';
+import Supergood from 'supergood';
 /**
  * Default selector for Post.
  * It's important to always explicitly say which fields you want to return in order to not leak extra information
@@ -20,6 +21,19 @@ const defaultPostSelect = {
   createdAt: true,
   updatedAt: true,
 } satisfies Prisma.PostSelect;
+
+const supergoodTrackedProcedure = publicProcedure.use(async (opts) => {
+  Supergood.init({
+    clientId: process.env.SUPERGOOD_CLIENT_ID,
+    clientSecret: process.env.SUPERGOOD_CLIENT_SECRET,
+    config: {
+      useRemoteConfig: false,
+    }
+  })
+  const result = await opts.next();
+  await Supergood.flushCache();
+  return result;
+})
 
 export const postRouter = router({
   list: publicProcedure
@@ -87,7 +101,7 @@ export const postRouter = router({
       }
       return post;
     }),
-  add: publicProcedure
+  add: supergoodTrackedProcedure
     .input(
       z.object({
         id: z.string().uuid().optional(),
@@ -96,8 +110,10 @@ export const postRouter = router({
       }),
     )
     .mutation(async ({ input }) => {
+      const textTranslation = await translateToSpanish(input.text);
+      const titleTranslation = await translateToSpanish(input.title);
       const post = await prisma.post.create({
-        data: input,
+        data: { ...input, title: titleTranslation ?? 'Error: Could not translate into spanish.', text: textTranslation ?? 'Error: Could not translate into spanish.' },
         select: defaultPostSelect,
       });
       return post;
