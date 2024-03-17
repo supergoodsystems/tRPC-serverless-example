@@ -9,16 +9,16 @@ dependencies:
     version: 5.25.0(react@18.2.0)
   '@trpc/client':
     specifier: npm:@trpc/client@next
-    version: 11.0.0-next-beta.311(@trpc/server@11.0.0-next-beta.311)
+    version: 11.0.0-next-beta.318(@trpc/server@11.0.0-next-beta.318)
   '@trpc/next':
     specifier: npm:@trpc/next@next
-    version: 11.0.0-next-beta.311(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.311)(@trpc/react-query@11.0.0-next-beta.311)(@trpc/server@11.0.0-next-beta.311)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0)
+    version: 11.0.0-next-beta.318(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.318)(@trpc/react-query@11.0.0-next-beta.318)(@trpc/server@11.0.0-next-beta.318)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0)
   '@trpc/react-query':
     specifier: npm:@trpc/react-query@next
-    version: 11.0.0-next-beta.311(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.311)(@trpc/server@11.0.0-next-beta.311)(react-dom@18.2.0)(react@18.2.0)
+    version: 11.0.0-next-beta.318(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.318)(@trpc/server@11.0.0-next-beta.318)(react-dom@18.2.0)(react@18.2.0)
   '@trpc/server':
     specifier: npm:@trpc/server@next
-    version: 11.0.0-next-beta.311
+    version: 11.0.0-next-beta.318
   clsx:
     specifier: ^2.0.0
     version: 2.1.0
@@ -3266,21 +3266,21 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@trpc/client@11.0.0-next-beta.311(@trpc/server@11.0.0-next-beta.311):
-    resolution: {integrity: sha512-B0etk3kt2fdFV/flvEjW3ettd9LDf084vQNvY41vyNXeljXUmYix6EnF8AO31yx0Dx9dSf8mic/5q64gX6pFvQ==}
+  /@trpc/client@11.0.0-next-beta.318(@trpc/server@11.0.0-next-beta.318):
+    resolution: {integrity: sha512-R3IlUZqN3WKNNWsayMiVP6JqWVdyNSuwQmBQY7VqVepUBV210uo4GoFLv2vmmegOlHzgx9IUZG7u1grN1v1nAg==}
     peerDependencies:
-      '@trpc/server': 11.0.0-next-beta.311+0a4f0a114
+      '@trpc/server': 11.0.0-next-beta.318+e9899d002
     dependencies:
-      '@trpc/server': 11.0.0-next-beta.311
+      '@trpc/server': 11.0.0-next-beta.318
     dev: false
 
-  /@trpc/next@11.0.0-next-beta.311(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.311)(@trpc/react-query@11.0.0-next-beta.311)(@trpc/server@11.0.0-next-beta.311)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Tvy4PKFuqB8OTTkhr4skEuTy5FNnypHtiWeu2Hms1c5ysXvaBd7CjQIhcrjxfc1NNlpHJl+6dlStLLgbIgRdnA==}
+  /@trpc/next@11.0.0-next-beta.318(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.318)(@trpc/react-query@11.0.0-next-beta.318)(@trpc/server@11.0.0-next-beta.318)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qeWfJ1vPm7GchLmMZz5Gj+mBka0CRci0bCKEhGoG8RSvI/+9GbbhZHKRRDnlsN81CgexJ2e2nULET9ESO6rt+Q==}
     peerDependencies:
       '@tanstack/react-query': ^5.25.0
-      '@trpc/client': 11.0.0-next-beta.311+0a4f0a114
-      '@trpc/react-query': 11.0.0-next-beta.311+0a4f0a114
-      '@trpc/server': 11.0.0-next-beta.311+0a4f0a114
+      '@trpc/client': 11.0.0-next-beta.318+e9899d002
+      '@trpc/react-query': 11.0.0-next-beta.318+e9899d002
+      '@trpc/server': 11.0.0-next-beta.318+e9899d002
       next: '*'
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -3291,32 +3291,32 @@ packages:
         optional: true
     dependencies:
       '@tanstack/react-query': 5.25.0(react@18.2.0)
-      '@trpc/client': 11.0.0-next-beta.311(@trpc/server@11.0.0-next-beta.311)
-      '@trpc/react-query': 11.0.0-next-beta.311(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.311)(@trpc/server@11.0.0-next-beta.311)(react-dom@18.2.0)(react@18.2.0)
-      '@trpc/server': 11.0.0-next-beta.311
+      '@trpc/client': 11.0.0-next-beta.318(@trpc/server@11.0.0-next-beta.318)
+      '@trpc/react-query': 11.0.0-next-beta.318(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.318)(@trpc/server@11.0.0-next-beta.318)(react-dom@18.2.0)(react@18.2.0)
+      '@trpc/server': 11.0.0-next-beta.318
       next: 14.1.2(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@trpc/react-query@11.0.0-next-beta.311(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.311)(@trpc/server@11.0.0-next-beta.311)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-J+sHi/4A9rOsbCri32aPt9HdO3Z80oSJ2p/JuGQlDUPXFkTV0dmkDnh6m6mzwj9Ct12QRaMe9Z4DT069HbrGGQ==}
+  /@trpc/react-query@11.0.0-next-beta.318(@tanstack/react-query@5.25.0)(@trpc/client@11.0.0-next-beta.318)(@trpc/server@11.0.0-next-beta.318)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-T6l4+OuOkE4yylUqtT5EiLXo0M5+XW6YaKqnTCMkELQrrPmq3Ok0eKfhWy1Xk+ayx02POO9fTzNhITz3BID21Q==}
     peerDependencies:
       '@tanstack/react-query': ^5.25.0
-      '@trpc/client': 11.0.0-next-beta.311+0a4f0a114
-      '@trpc/server': 11.0.0-next-beta.311+0a4f0a114
+      '@trpc/client': 11.0.0-next-beta.318+e9899d002
+      '@trpc/server': 11.0.0-next-beta.318+e9899d002
       react: '>=18.2.0'
       react-dom: '>=18.2.0'
     dependencies:
       '@tanstack/react-query': 5.25.0(react@18.2.0)
-      '@trpc/client': 11.0.0-next-beta.311(@trpc/server@11.0.0-next-beta.311)
-      '@trpc/server': 11.0.0-next-beta.311
+      '@trpc/client': 11.0.0-next-beta.318(@trpc/server@11.0.0-next-beta.318)
+      '@trpc/server': 11.0.0-next-beta.318
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@trpc/server@11.0.0-next-beta.311:
-    resolution: {integrity: sha512-8NucyaXTpeOJC9qZ9fe6R074tBzlkUMhw4mUPRAFU9OvVZVn/4OT1L0siDxiX5PqxDnNo7ywhDGQPwkhmXFl8A==}
+  /@trpc/server@11.0.0-next-beta.318:
+    resolution: {integrity: sha512-lxwWfqgv3LvIfhagCElDtNEY6C2sQU3o43OH0vn9hQ+7o9j+JHwEZjZz1ixvm3wUZvwZ68LheXuKL9RdVn1d4w==}
     dev: false
 
   /@trpc/server@9.16.0:
@@ -4130,7 +4130,7 @@ packages:
   /axios@0.27.2(debug@4.3.4):
     resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
     dependencies:
-      follow-redirects: 1.15.5(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.4)
       form-data: 4.0.0
     transitivePeerDependencies:
       - debug
@@ -4139,7 +4139,7 @@ packages:
   /axios@1.6.7:
     resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
     dependencies:
-      follow-redirects: 1.15.5(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.4)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -5591,8 +5591,8 @@ packages:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
     dev: true
 
-  /follow-redirects@1.15.5(debug@4.3.4):
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6(debug@4.3.4):
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
